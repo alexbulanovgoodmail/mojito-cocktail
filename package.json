@@ -1,0 +1,46 @@
+{
+  "name": "vite-boilerplate",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint \"**/*.{js,ts}\" && stylelint \"**/*.{css,scss}\"",
+    "lint:styles": "stylelint \"**/*.{css,scss}\"",
+    "lint:styles:fix": "stylelint \"**/*.{css,scss}\" --fix",
+    "lint:scripts": "eslint \"**/*.{js,ts}\"",
+    "lint:scripts:fix": "eslint \"**/*.{js,ts}\" --fix",
+    "format": "prettier --check \"**/*.{js,ts,css,scss,json,md}\"",
+    "format:fix": "prettier --write \"**/*.{js,ts,css,scss,json,md}\"",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@types/node": "^24.9.2",
+    "eslint": "^9.38.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "husky": "^9.1.7",
+    "jiti": "^2.6.1",
+    "postcss-html": "^1.8.0",
+    "postcss-scss": "^4.0.9",
+    "prettier": "^3.6.2",
+    "sass": "^1.93.2",
+    "sass-loader": "^16.0.6",
+    "stylelint": "^16.25.0",
+    "stylelint-config-standard": "^39.0.1",
+    "stylelint-config-standard-scss": "^16.0.0",
+    "stylelint-prettier": "^5.0.3",
+    "typescript": "~5.9.3",
+    "vite": "^7.1.7",
+    "vite-plugin-checker": "^0.11.0",
+    "vite-plugin-html-inject": "^1.1.2",
+    "vite-plugin-svg-spriter": "^1.0.0"
+  },
+  "lint-staged": {
+    "*.{js,ts}": "eslint --fix",
+    "*.{css,scss}": "stylelint --fix",
+    "*.{js,ts,css,scss,json,md}": "prettier --write"
+  }
+}
