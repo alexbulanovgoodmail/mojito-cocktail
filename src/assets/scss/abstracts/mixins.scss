@@ -21,3 +21,14 @@
 @mixin font-2 {
   font-family: $font-2;
 }
+
+@mixin hover-effect {
+  transition: color $transition-duration $transition-function;
+
+  @media (hover: hover) {
+    &:hover,
+    &:focus-visible {
+      color: var(--color-accent);
+    }
+  }
+}
