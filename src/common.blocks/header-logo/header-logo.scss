@@ -1,0 +1,23 @@
+.header-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: currentcolor;
+
+  & > * + * {
+    margin-left: 4px;
+  }
+
+  @include font-1;
+
+  &__image {
+    width: 32px;
+    height: 32px;
+  }
+
+  &__text {
+    margin-bottom: -12px;
+    font-size: 30px;
+    line-height: 1;
+  }
+}

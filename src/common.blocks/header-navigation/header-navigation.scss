@@ -1,0 +1,28 @@
+.header-navigation {
+  &__items {
+    margin: -6px -12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+
+  &__item {
+    margin: 6px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 140%;
+
+    @media screen and (min-width: $md) {
+      font-size: 16px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: currentcolor;
+
+    @include hover-effect;
+  }
+}
