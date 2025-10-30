@@ -12,20 +12,6 @@
     @include noisy;
   }
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: -1;
-    width: 100%;
-    padding-top: 100%;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    background-image: radial-gradient(#ffffff20, #000, transparent);
-    background-repeat: no-repeat;
-  }
-
   @media screen and (min-width: $md) {
     padding: 120px 0;
   }
@@ -69,25 +55,29 @@
 
   &__leaf-left {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: -20px;
+    left: -50px;
     z-index: -1;
     width: 120px;
 
     @media screen and (min-width: $md) {
       width: auto;
+      bottom: -90px;
+      left: -150px;
     }
   }
 
   &__leaf-right {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: -20px;
+    right: -50px;
     z-index: -1;
     width: 120px;
 
     @media screen and (min-width: $md) {
       width: auto;
+      bottom: -90px;
+      right: -150px;
     }
   }
 }
