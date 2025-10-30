@@ -1,0 +1,47 @@
+.pricelist-cocktails {
+  &__title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 140%;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+    & > * + * {
+      margin-top: 36px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    & > * + * {
+      margin-left: 12px;
+    }
+  }
+
+  &__name {
+    font-size: 30px;
+    line-height: 1;
+    color: var(--color-accent);
+
+    @include font-1;
+  }
+
+  &__description {
+    font-weight: 500;
+  }
+
+  &__price {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1;
+    white-space: nowrap;
+  }
+}

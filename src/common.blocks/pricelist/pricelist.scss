@@ -1,0 +1,93 @@
+.pricelist {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  min-height: 100svh;
+  padding: 48px 0;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+
+    @include noisy;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background-image: radial-gradient(#ffffff20, #000, transparent);
+    background-repeat: no-repeat;
+  }
+
+  @media screen and (min-width: $md) {
+    padding: 120px 0;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 64px;
+
+    @media screen and (min-width: $lg) {
+      grid-template-columns: repeat(12, 1fr);
+      gap: 24px;
+    }
+  }
+
+  &__popular {
+    @media screen and (min-width: $lg) {
+      grid-column: span 4 / span 4;
+      grid-column-start: 1;
+    }
+  }
+
+  &__loved {
+    @media screen and (min-width: $lg) {
+      grid-column: span 4 / span 4;
+      grid-column-start: 9;
+    }
+  }
+
+  .cocktail-leaf-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 120px;
+
+    @media screen and (min-width: $md) {
+      width: auto;
+    }
+  }
+
+  &__leaf-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 120px;
+
+    @media screen and (min-width: $md) {
+      width: auto;
+    }
+  }
+
+  &__leaf-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    width: 120px;
+
+    @media screen and (min-width: $md) {
+      width: auto;
+    }
+  }
+}
