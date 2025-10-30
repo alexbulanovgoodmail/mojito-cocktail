@@ -14,14 +14,14 @@ document.fonts.ready.then(() => {
     stagger: 0.06,
   })
 
-  const herotTextSplit = new SplitText(
+  const heroTextSplit = new SplitText(
     ['.hero-recipe > *', '.hero-details > *'],
     {
       type: 'lines',
     },
   )
 
-  gsap.from(herotTextSplit.lines, {
+  gsap.from(heroTextSplit.lines, {
     opacity: 0,
     yPercent: 100,
     duration: 1.8,
