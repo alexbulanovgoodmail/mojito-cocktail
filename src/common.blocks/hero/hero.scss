@@ -16,10 +16,9 @@
     font-size: 28vw;
     line-height: 1;
     text-align: center;
-    color: var(--color-light);
+    color: inherit;
 
     @include font-1;
-    @include text-gradient;
 
     @media screen and (min-width: $md) {
       margin-top: 148px;
@@ -74,7 +73,7 @@
   &__leaf-left {
     position: absolute;
     left: 0;
-    bottom: -80px;
+    bottom: -40px;
     z-index: 0;
     width: 120px;
 
