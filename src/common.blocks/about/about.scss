@@ -1,0 +1,41 @@
+.about {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  min-height: 100svh;
+  padding: 48px 0;
+  overflow: hidden;
+
+  @media screen and (min-width: $md) {
+    padding: 120px 0;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+
+    @media screen and (min-width: $lg) {
+      grid-template-columns: repeat(12, 1fr);
+      gap: 24px;
+    }
+  }
+
+  &__heading {
+    @media screen and (min-width: $lg) {
+      grid-column: span 5 / span 5;
+      grid-column-start: 1;
+    }
+  }
+
+  &__reviews {
+    & > * + * {
+      margin-top: 32px;
+    }
+
+    @media screen and (min-width: $lg) {
+      grid-column: span 4 / span 4;
+      grid-column-start: 9;
+    }
+  }
+}

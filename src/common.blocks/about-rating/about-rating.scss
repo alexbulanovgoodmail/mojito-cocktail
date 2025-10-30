@@ -1,0 +1,23 @@
+.about-rating {
+  &__stars {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+
+    & > * + * {
+      margin-left: 4px;
+    }
+  }
+
+  &__score {
+    margin-bottom: 12px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  &__description {
+    font-size: 12px;
+    line-height: 140%;
+  }
+}

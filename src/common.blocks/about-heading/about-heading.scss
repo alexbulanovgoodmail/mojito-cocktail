@@ -1,0 +1,26 @@
+.about-heading {
+  &__badge {
+    margin-bottom: 32px;
+    border-radius: 50px;
+    display: inline-flex;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: var(--color-black);
+    background-color: var(--color-white);
+  }
+
+  &__title {
+    font-size: 30px;
+    line-height: 90%;
+    text-wrap: pretty;
+
+    @include font-1;
+
+    @media screen and (min-width: $md) {
+      max-width: 480px;
+      font-size: 50px;
+    }
+  }
+}
