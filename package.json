@@ -42,5 +42,8 @@
     "*.{js,ts}": "eslint --fix",
     "*.{css,scss}": "stylelint --fix",
     "*.{js,ts,css,scss,json,md}": "prettier --write"
+  },
+  "dependencies": {
+    "gsap": "^3.13.0"
   }
 }
