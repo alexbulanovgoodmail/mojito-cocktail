@@ -39,3 +39,7 @@ body {
     padding: 0 80px;
   }
 }
+
+.text-gradient {
+  @include text-gradient;
+}

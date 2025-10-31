@@ -6,6 +6,8 @@ document.fonts.ready.then(() => {
     type: 'chars, words',
   })
 
+  heroTitleSplit.chars.forEach((char) => char.classList.add('text-gradient'))
+
   gsap.from(heroTitleSplit.chars, {
     opacity: 0,
     yPercent: 100,
