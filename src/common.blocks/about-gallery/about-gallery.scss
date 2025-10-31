@@ -1,0 +1,50 @@
+.about-gallery {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+
+    @media screen and (min-width: $lg) {
+      grid-template-columns: repeat(12, 1fr);
+    }
+  }
+
+  &__item {
+    grid-column: span 1 / span 1;
+  }
+
+  /* 1 элемент — занимает 3 колонки */
+  &__item:nth-child(5n + 1) {
+    @media screen and (min-width: $lg) {
+      grid-column: span 3;
+    }
+  }
+
+  /* 2 элемент — занимает 3 колонки */
+  &__item:nth-child(5n + 2) {
+    @media screen and (min-width: $lg) {
+      grid-column: span 3;
+    }
+  }
+
+  /* 3 элемент — занимает 6 колонок */
+  &__item:nth-child(5n + 3) {
+    @media screen and (min-width: $lg) {
+      grid-column: span 6;
+    }
+  }
+
+  /* 4 элемент — занимает 8 колонок */
+  &__item:nth-child(5n + 4) {
+    @media screen and (min-width: $lg) {
+      grid-column: span 8;
+    }
+  }
+
+  /* 5 элемент — занимает 4 колонки */
+  &__item:nth-child(5n + 5) {
+    @media screen and (min-width: $lg) {
+      grid-column: span 4;
+    }
+  }
+}

@@ -19,3 +19,14 @@ tl.from(aboutTitleSplit.lines, {
   ease: 'expo.out',
   stagger: 0.06,
 })
+
+tl.from(
+  '.about-card',
+  {
+    opacity: 0,
+    duration: 1,
+    ease: 'power1.inOut',
+    stagger: 0.04,
+  },
+  '-=0.5',
+)
